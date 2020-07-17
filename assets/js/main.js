@@ -1,12 +1,12 @@
 const $ = document;
 
-$querySelector("#contactForm").addEventListener("submit", async (event) => {
+$.querySelector("#contactForm").addEventListener("submit", async (event) => {
   event.preventDefault();
   const data = {
-    firstname: document.querySelector("#firstname").value,
-    lastname: document.querySelector("#lastname").value,
-    email: document.querySelector("#email").value,
-    message: document.querySelector("#message").value,
+    firstname: $.querySelector("#firstname").value,
+    lastname: $.querySelector("#lastname").value,
+    email: $.querySelector("#email").value,
+    message: $.querySelector("#message").value,
   };
   console.log(data);
 
@@ -14,5 +14,5 @@ $querySelector("#contactForm").addEventListener("submit", async (event) => {
     "https://jovial-hawking-95d4e8.netlify.app",
     data
   );
-  console.log(response);
+  console.log(response.data);
 });
