@@ -10,6 +10,9 @@ $querySelector("#contactForm").addEventListener("submit", async (event) => {
   };
   console.log(data);
 
-  const response = await axios.post(" https://efcdec521ba2.ngrok.io", data);
+  const response = await axios.post(
+    "https://jovial-hawking-95d4e8.netlify.app",
+    data
+  );
   console.log(response);
 });
